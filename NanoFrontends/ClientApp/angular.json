@@ -145,11 +145,9 @@
             "tsConfig": "projects/welcome-feature/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/welcome-feature/src/favicon.ico",
-              "projects/welcome-feature/src/assets"
             ],
             "styles": [
-              "projects/welcome-feature/src/styles.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -157,8 +155,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/welcome-feature/src/environments/environment.ts",
-                  "with": "projects/welcome-feature/src/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,

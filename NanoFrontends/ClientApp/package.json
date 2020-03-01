@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy:wf": "npm run build:wf && npm run bundle:wf",
     "bundle:wf": "npm run build:wf && npm run concat:wf",
     "build:wf": "ng build welcome-feature --prod --output-hashing=none",
     "concat:wf": "node concat-wf.js",

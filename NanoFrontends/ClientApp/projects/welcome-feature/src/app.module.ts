@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Injector } from '@angular/core';
+import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {createCustomElement} from '@angular/elements';
 import { WelcomeComponent } from 'src/app/welcome/welcome.component';
 
@@ -10,6 +10,7 @@ import { WelcomeComponent } from 'src/app/welcome/welcome.component';
   ],
   providers: [],
   entryComponents: [WelcomeComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { 
   constructor(injector: Injector) {
